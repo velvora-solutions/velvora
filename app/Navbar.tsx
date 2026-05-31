@@ -1,5 +1,4 @@
 "use client";
-import Navbar from "./components/Navbar";
 
 import { useState, useEffect } from "react";
 
@@ -20,38 +19,24 @@ export default function Navbar() {
     };
 
     window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <div className="fixed w-full flex justify-between items-center px-6 md:px-10 py-5 bg-black/40 backdrop-blur-md z-50">
+    <header className="fixed top-0 left-0 w-full bg-black/70 backdrop-blur-xl border-b border-white/10 z-50">
+      <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
 
-      <h1 className="font-bold text-lg">Velvora</h1>
+        <h1 className="text-yellow-400 font-bold text-xl">
+          Velvora Solutions
+        </h1>
 
-      <div className="hidden md:flex space-x-6">
-
-        <a
-          href="#services"
-          className={active === "services" ? "text-white" : "text-gray-400"}
-        >
-          Services
-        </a>
-
-        <a
-          href="#about"
-          className={active === "about" ? "text-white" : "text-gray-400"}
-        >
-          About
-        </a>
-
-        <a
-          href="#contact"
-          className={active === "contact" ? "text-white" : "text-gray-400"}
-        >
-          Contact
-        </a>
+        <nav className="flex gap-6 text-sm text-white">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </nav>
 
       </div>
-
-    </div>
+    </header>
   );
 }
