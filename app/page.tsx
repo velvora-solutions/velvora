@@ -119,10 +119,10 @@ Our mission is to help businesses, educational institutions, publishers, and org
           <div className="space-y-8">
             <div className="bg-white text-black rounded-3xl p-8 shadow-xl flex flex-col md:flex-row items-center gap-8">
               <img
-  src="/Founder.png"
-  alt="Founder"
-  className="w-40 h-40 md:w-56 md:h-56 object-cover rounded-3xl bg-gray-100 p-2 shadow-xl hover:scale-105 transition-all duration-300"
-/>
+                src="/Founder.png"
+                alt="Founder"
+                className="w-64 h-64 md:w-80 md:h-80 object-contain rounded-3xl bg-gray-100 p-3 shadow-xl shadow-[0_0_35px_rgba(234,179,8,0.4)]"
+              />
 
               <div>
                 <p className="text-yellow-400 font-semibold mb-2">
@@ -220,7 +220,7 @@ Our mission is to help businesses, educational institutions, publishers, and org
               },
               {
                 title: "IT Services & Automation",
-                desc: "Custom automation solutions, Web development, AI workflows, and digital support services.",
+                desc: "Custom automation solutions, Python development, AI workflows, and digital support services.",
               },
             ].map((service, index) => (
               <div

@@ -38,3 +38,10 @@ html {
 .group-hover\:rotate-y-12:hover {
   transform: rotateY(12deg);
 }
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  perspective: 1000px;
+}
